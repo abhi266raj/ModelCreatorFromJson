@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4C30D81EC75BDA000BEF59 /* ConfigurationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C30D71EC75BDA000BEF59 /* ConfigurationModel.m */; };
+		3A4C30DF1EC75FBF000BEF59 /* OutputLangugaeObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C30DE1EC75FBF000BEF59 /* OutputLangugaeObjectiveC.m */; };
+		3A4C30E21EC763C2000BEF59 /* CamelCaseNamingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C30E11EC763C2000BEF59 /* CamelCaseNamingStrategy.m */; };
 		3AC0664A1EBFB6FF00F8ABF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC066491EBFB6FF00F8ABF1 /* AppDelegate.m */; };
 		3AC0664D1EBFB6FF00F8ABF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0664C1EBFB6FF00F8ABF1 /* main.m */; };
 		3AC066501EBFB6FF00F8ABF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0664F1EBFB6FF00F8ABF1 /* ViewController.m */; };
@@ -14,6 +17,7 @@
 		3AC066551EBFB6FF00F8ABF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC066531EBFB6FF00F8ABF1 /* Main.storyboard */; };
 		3AC066601EBFB6FF00F8ABF1 /* ModelCreatorFromJsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0665F1EBFB6FF00F8ABF1 /* ModelCreatorFromJsonTests.m */; };
 		3AC0666B1EBFB6FF00F8ABF1 /* ModelCreatorFromJsonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0666A1EBFB6FF00F8ABF1 /* ModelCreatorFromJsonUITests.m */; };
+		3AC066791EBFB7B500F8ABF1 /* JSONModelCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC066781EBFB7B500F8ABF1 /* JSONModelCreater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A4C30D61EC75BDA000BEF59 /* ConfigurationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationModel.h; sourceTree = "<group>"; };
+		3A4C30D71EC75BDA000BEF59 /* ConfigurationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationModel.m; sourceTree = "<group>"; };
+		3A4C30DB1EC75C7F000BEF59 /* OutputLanguageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutputLanguageProtocol.h; sourceTree = "<group>"; };
+		3A4C30DC1EC75E38000BEF59 /* NamingAlgorithmStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NamingAlgorithmStrategy.h; sourceTree = "<group>"; };
+		3A4C30DD1EC75FBF000BEF59 /* OutputLangugaeObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputLangugaeObjectiveC.h; sourceTree = "<group>"; };
+		3A4C30DE1EC75FBF000BEF59 /* OutputLangugaeObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputLangugaeObjectiveC.m; sourceTree = "<group>"; };
+		3A4C30E01EC763C2000BEF59 /* CamelCaseNamingStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamelCaseNamingStrategy.h; sourceTree = "<group>"; };
+		3A4C30E11EC763C2000BEF59 /* CamelCaseNamingStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamelCaseNamingStrategy.m; sourceTree = "<group>"; };
 		3AC066451EBFB6FF00F8ABF1 /* ModelCreatorFromJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelCreatorFromJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC066481EBFB6FF00F8ABF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3AC066491EBFB6FF00F8ABF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +61,8 @@
 		3AC066661EBFB6FF00F8ABF1 /* ModelCreatorFromJsonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelCreatorFromJsonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC0666A1EBFB6FF00F8ABF1 /* ModelCreatorFromJsonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelCreatorFromJsonUITests.m; sourceTree = "<group>"; };
 		3AC0666C1EBFB6FF00F8ABF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC066781EBFB7B500F8ABF1 /* JSONModelCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelCreater.m; sourceTree = "<group>"; };
+		3AC0667A1EBFB7D900F8ABF1 /* JSONModelCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModelCreater.h; path = ../JSONModelCreater.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,16 @@
 		3AC066471EBFB6FF00F8ABF1 /* ModelCreatorFromJson */ = {
 			isa = PBXGroup;
 			children = (
+				3A4C30D61EC75BDA000BEF59 /* ConfigurationModel.h */,
+				3A4C30D71EC75BDA000BEF59 /* ConfigurationModel.m */,
+				3A4C30DB1EC75C7F000BEF59 /* OutputLanguageProtocol.h */,
+				3A4C30DD1EC75FBF000BEF59 /* OutputLangugaeObjectiveC.h */,
+				3A4C30DE1EC75FBF000BEF59 /* OutputLangugaeObjectiveC.m */,
+				3A4C30DC1EC75E38000BEF59 /* NamingAlgorithmStrategy.h */,
+				3A4C30E01EC763C2000BEF59 /* CamelCaseNamingStrategy.h */,
+				3A4C30E11EC763C2000BEF59 /* CamelCaseNamingStrategy.m */,
+				3AC0667A1EBFB7D900F8ABF1 /* JSONModelCreater.h */,
+				3AC066781EBFB7B500F8ABF1 /* JSONModelCreater.m */,
 				3AC066481EBFB6FF00F8ABF1 /* AppDelegate.h */,
 				3AC066491EBFB6FF00F8ABF1 /* AppDelegate.m */,
 				3AC0664E1EBFB6FF00F8ABF1 /* ViewController.h */,
@@ -270,8 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC066501EBFB6FF00F8ABF1 /* ViewController.m in Sources */,
+				3A4C30E21EC763C2000BEF59 /* CamelCaseNamingStrategy.m in Sources */,
 				3AC0664D1EBFB6FF00F8ABF1 /* main.m in Sources */,
+				3A4C30DF1EC75FBF000BEF59 /* OutputLangugaeObjectiveC.m in Sources */,
+				3AC066791EBFB7B500F8ABF1 /* JSONModelCreater.m in Sources */,
 				3AC0664A1EBFB6FF00F8ABF1 /* AppDelegate.m in Sources */,
+				3A4C30D81EC75BDA000BEF59 /* ConfigurationModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +528,7 @@
 				3AC066711EBFB6FF00F8ABF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC066721EBFB6FF00F8ABF1 /* Build configuration list for PBXNativeTarget "ModelCreatorFromJsonTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +537,7 @@
 				3AC066741EBFB6FF00F8ABF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC066751EBFB6FF00F8ABF1 /* Build configuration list for PBXNativeTarget "ModelCreatorFromJsonUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +546,7 @@
 				3AC066771EBFB6FF00F8ABF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
