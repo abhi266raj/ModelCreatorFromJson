@@ -9,9 +9,11 @@
 #import "ViewController.h"
 #import "JSONModelCreater.h"
 
+static NSString *defaultMessage = @"Enter Json here";
 @interface ViewController ()
 @property (weak) IBOutlet NSScrollView *Content;
-
+@property (weak) IBOutlet NSTextField *textField;
+@property (weak) IBOutlet NSTextField *MessageBox;
 @property (unsafe_unretained) IBOutlet NSTextView *textView;
 @end
 
@@ -19,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.textView.automaticQuoteSubstitutionEnabled = NO;
     
     // Do any additional setup after loading the view.
 }
@@ -35,15 +38,20 @@
     NSString *content = [[_textView textStorage]string];
     NSData *data =  [content dataUsingEncoding:NSUTF8StringEncoding];
     if (data){
-        NSMutableDictionary* jsonData = [NSMutableDictionary dictionaryWithDictionary:[NSJSONSerialization JSONObjectWithData:data
-                                                                                                                      options:kNilOptions
-                                                                                                                        error:nil]];
-        
-        JSONModelCreater *modelCreator = [[JSONModelCreater alloc]initWithDictionary:jsonData andModelName:@"Model"];
+        NSError* error = nil;
+        NSMutableDictionary* jsonData = [NSMutableDictionary dictionaryWithDictionary:[NSJSONSerialization JSONObjectWithData:data options:0 error:&error]];
+        NSString *fileName = self.textField.stringValue;
+        if (!fileName){
+            fileName = @"FileName";
+        }
+        if (jsonData){
+        JSONModelCreater *modelCreator = [[JSONModelCreater alloc]initWithDictionary:jsonData andModelName:fileName];
         [modelCreator createModel];
-        
+        }
         if (!jsonData){
-            NSLog (@"Wrong foramt");
+            self.MessageBox.stringValue =error.localizedDescription;
+        }else{
+            self.MessageBox.stringValue = @"File Created";
         }
         
     }

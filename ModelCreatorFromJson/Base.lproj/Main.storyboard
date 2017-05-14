@@ -692,7 +692,7 @@
                                     <rect key="frame" x="1" y="1" width="478" height="351"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="O3b-iY-iqX">
+                                        <textView importsGraphics="NO" richText="NO" selectionGranularity="paragraph" findStyle="panel" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" id="O3b-iY-iqX">
                                             <rect key="frame" x="0.0" y="0.0" width="478" height="351"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -730,12 +730,23 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66g-9s-mjk">
+                                <rect key="frame" x="20" y="405" width="158" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="FileName" placeholderString="FileName" drawsBackground="YES" allowsEditingTextAttributes="YES" id="JTI-k0-Uue">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="sdK-nO-hFT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="1Xt-DV-alK"/>
                             <constraint firstAttribute="trailing" secondItem="Gu7-We-PSd" secondAttribute="trailing" id="3tO-I7-dAY"/>
+                            <constraint firstItem="66g-9s-mjk" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="6tw-hh-eVc"/>
                             <constraint firstAttribute="bottom" secondItem="Gu7-We-PSd" secondAttribute="bottom" constant="20" id="DUy-Gc-Fbl"/>
                             <constraint firstItem="sdK-nO-hFT" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="H3X-Bk-JC3"/>
+                            <constraint firstItem="66g-9s-mjk" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="O03-sD-h79"/>
+                            <constraint firstItem="sdK-nO-hFT" firstAttribute="leading" secondItem="66g-9s-mjk" secondAttribute="trailing" constant="20" id="c12-TW-ULe"/>
                             <constraint firstItem="hd8-lH-ZbF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="c2K-F0-cDv"/>
                             <constraint firstItem="Gu7-We-PSd" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="e9H-8c-Veh"/>
                             <constraint firstItem="Gu7-We-PSd" firstAttribute="top" secondItem="hd8-lH-ZbF" secondAttribute="bottom" constant="8" symbolic="YES" id="tTW-U9-gX2"/>
@@ -744,6 +755,8 @@
                     </view>
                     <connections>
                         <outlet property="Content" destination="Gu7-We-PSd" id="a1p-z2-oN3"/>
+                        <outlet property="MessageBox" destination="hd8-lH-ZbF" id="Wmg-kU-dKd"/>
+                        <outlet property="textField" destination="66g-9s-mjk" id="ivx-dZ-XQb"/>
                         <outlet property="textView" destination="O3b-iY-iqX" id="L4y-VH-ftq"/>
                     </connections>
                 </viewController>
